@@ -1,0 +1,21 @@
+Remark line goes here
+MASS
+H  1.008         0.161               same as hn 
+
+BOND
+H -c3    0.00   0.000       ATTN, need revision
+
+ANGLE
+H -c3-c3    0.000       0.000   ATTN, need revision
+H -c3-H     0.000       0.000   ATTN, need revision
+H -c3-oh    0.000       0.000   ATTN, need revision
+
+DIHE
+
+IMPROPER
+
+NONBON
+  H           0.6000  0.0157             same as hn 
+
+
+

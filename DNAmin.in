@@ -1,0 +1,8 @@
+test run 1
+ &cntrl
+     imin = 1, ntmin = 3, ntpr = 100, ntwx=100, maxcyc = 10000, ncyc=5000, ntb=1, cut = 13.0 /
+Hold the DNA fixed
+500.0
+RES 1 20
+end
+end

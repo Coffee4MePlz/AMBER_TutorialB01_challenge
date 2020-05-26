@@ -1,0 +1,45 @@
+#
+# mixture of ethanol and water to solvate A-DNA
+#
+
+#tolerance is the distance between atoms in angstroms
+
+tolerance 2.0
+
+#output 
+
+filetype pdb
+
+output a-dna_eth_water_solvate.pdb
+
+# The protein will be fixed with its center of mass at center of the
+# box, and no rotation (the first three zeros correspond to the position
+# of the center of mass and the last three correspond to the euler
+# angles of rotation, in radian, relative to the position in the input
+# file). 
+
+structure a-dna.nab.pdb
+  number 1
+  fixed 0. 0. 0. 0. 0. 0.
+  centerofmass
+  add_amber_ter
+end structure
+
+# Ethanol molecules will be put inside a box that contains the protein.
+# There will be 737 ethanol molecules that will be put in a box
+# centered in the origin with edges of 40. Angstroms.
+# the add_amber_ter is a precaution, to remind Leap that they are different residues. 
+
+
+structure ETH.pdb
+  number 737
+  inside box -40. -40. -40. 40. 40. 40.
+  add_amber_ter
+end structure
+
+structure water.pdb
+  number 2947 
+  inside box -40. -40. -40. 40. 40. 40.
+  add_amber_ter
+end structure
+
