@@ -1,14 +1,9 @@
-#obs: 
-the thing is that there was a vacuum, so the whole system moves in translation, until second 800. That why we have such a diferent RMS fit until 800ps. After the box is really in place, then everything is stable, and the DNA is pretty much the same. This could be avoided if we did the solvate separately, or did more minimization time. Check PlotsEPics directory for some images. You can see that energies are very stable.
-# TO DO List:
-
-* [ ] Change directory names
-* [ ] Analyse VMD trajectories
-* [ ] Put figures on Readme.md
-
-
+## Disclaimer
+I have not ommited any of the simulation flaws, but I commented on them. Mostly because I think they are relevant to the learning process, and this is, after all, a Tutorial. I have hinted better ways to solve these problems so you can take the better path. 
 
 # Solving Tutorial B1 final challenge, A-DNA in 80%water 20%ethanol solvent
+
+![VMD image, water molecules are ommited](https://github.com/Coffee4MePlz/DNA_Mixed_Solution/blob/master/PlotsEPics/Capa.jpg ' ')
 
 If you have been trough the [Tutorial B1 from AMBER website](http://ambermd.org/tutorials/basic/tutorial1/), first of all, congratulations, secondly, you have probably seen that there is an extra "Feel free to use what you have learned to experiment with alternative starting geometries. Do they all change to B-DNA if run for long enough? What about in a mixture of 80% water, 20% ethanol?" at the end. So I went for it. But as I could not find any ethanol solvent, things got messy pretty quickly. This is my attempt to solve the challenge. Also, this may be used for future reference on solving this extra, since I could not find anything that could guide me all the way through, I had to figure it out by myself. Feel free to follow these steps, if you want to save some of your time. 
 
@@ -131,6 +126,14 @@ nohup ./Run_10steps.x >& run.log &
 Ok! Now after a long night (maybe 2?) of sleep you should be good to go! Since this takes around 20hs to finish.
 
 # Conclusion
+
+First, let's take a look at our RMS fit plot ![RMSfit](https://github.com/Coffee4MePlz/DNA_Mixed_Solution/blob/master/PlotsEPics/RMSfit.png) 
+
+It should be evident that our molecule is going through some transformation for the first 800ps. But it is not. Actually, if you run it on VMD, you will realize that it is actually doing a translational motion. You may be wondering why. If you check the minimization *.nc* file, you will see that, as soon as the simulation started, the ethanols just grabbed any other molecule that was around them, forming vacuum pouches. If we ran the minimization longer, these vacuum would probably be filled up, since the system tends to a more compact format. Since we did not run it as long as we should, the filling motion pushed the whole system a bit in a certain direction. If you check the RMS plot, you will notice that afterwards the DNA is stable, even thoug far from its initial position. This issue could be avoided if we actually ran the solvate separately, minimized it (long enough) and then solvated the DNA. This would be the right approach.
+
+We can see that our DNA did not change its basic form. It mantained its initial form. It is probable that the ethanol created some higher energy restraint, so that the temperature was not high enough for the molecule to overcome the new potential and slide to a global minimum. In a more uncientific way to put it: the ethanol "grabbed" the DNA molecule and created a bit of a tougher ribbon (a sort of cage), restraining its movement. .
+
+You can check the PlotsEPics directory for some images.
 
 Hope this gave you some intuition on how to proceed with more complex solvates. Let me know if you had any doubts or any contributions. 
 
