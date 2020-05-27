@@ -2,3 +2,30 @@ nohup: ignoring input
 Starting Script at: seg mai 25 21:39:47 -03 2020
 
 Job 2 started at: seg mai 25 21:39:47 -03 2020
+gzip: DNA_md2.nc: No such file or directory
+Job 2 finished at: seg mai 25 23:52:29 -03 2020
+Job 3 started at: seg mai 25 23:52:29 -03 2020
+gzip: DNA_md3.nc: No such file or directory
+Job 3 finished at: ter mai 26 02:14:44 -03 2020
+Job 4 started at: ter mai 26 02:14:44 -03 2020
+gzip: DNA_md4.nc: No such file or directory
+Job 4 finished at: ter mai 26 04:24:45 -03 2020
+Job 5 started at: ter mai 26 04:24:45 -03 2020
+gzip: DNA_md5.nc: No such file or directory
+Job 5 finished at: ter mai 26 06:14:18 -03 2020
+Job 6 started at: ter mai 26 06:14:18 -03 2020
+gzip: DNA_md6.nc: No such file or directory
+Job 6 finished at: ter mai 26 08:03:06 -03 2020
+Job 7 started at: ter mai 26 08:03:06 -03 2020
+gzip: DNA_md7.nc: No such file or directory
+Job 7 finished at: ter mai 26 09:53:31 -03 2020
+Job 8 started at: ter mai 26 09:53:31 -03 2020
+gzip: DNA_md8.nc: No such file or directory
+Job 8 finished at: ter mai 26 11:41:51 -03 2020
+Job 9 started at: ter mai 26 11:41:51 -03 2020
+gzip: DNA_md9.nc: No such file or directory
+Job 9 finished at: ter mai 26 13:30:45 -03 2020
+Job 10 started at: ter mai 26 13:30:45 -03 2020
+gzip: DNA_md10.nc: No such file or directory
+Job 10 finished at: ter mai 26 15:19:57 -03 2020
+ALL DONE

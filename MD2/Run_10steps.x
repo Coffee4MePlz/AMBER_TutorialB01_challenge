@@ -20,7 +20,7 @@ while ( $MDCURRENTJOB <= $MDENDJOB )
                             -c Output/DNA_md$MDINPUT.ncrst \
                             -r Output/DNA_md$MDCURRENTJOB.ncrst \
                             -x Output/DNA_md$MDCURRENTJOB.nc
-   gzip -9 -v DNA_md$MDCURRENTJOB.nc
+   gzip -9 -v /Output/DNA_md$MDCURRENTJOB.nc
    echo -n "Job $MDCURRENTJOB finished at: "
    date
    @ MDCURRENTJOB = $MDCURRENTJOB + 1

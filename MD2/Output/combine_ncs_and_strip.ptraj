@@ -8,8 +8,9 @@ trajin DNA_md7.nc
 trajin DNA_md8.nc
 trajin DNA_md9.nc
 trajin DNA_md10.nc
-trajout DNA_1to10.nc
-rms first out DNA_1to10.rmsfit @P,03',05',C3',C4',C5' time 0.50
+trajout DNA_1to10_noETH.nc
+rms first out DNA_1to10_noETH.rmsfit @P,03',05',C3',C4',C5' time 0.50
 center :1-20
 image familiar
-strip : WAT
+strip :WAT
+strip :ETH

@@ -1,3 +1,5 @@
+#obs: 
+the thing is that there was a vacuum, so the whole system moves in translation, until second 800. That why we have such a diferent RMS fit until 800ps. After the box is really in place, then everything is stable, and the DNA is pretty much the same. This could be avoided if we did the solvate separately, or did more minimization time. Check PlotsEPics directory for some images. You can see that energies are very stable.
 # TO DO List:
 
 * [ ] Change directory names
@@ -133,6 +135,7 @@ Ok! Now after a long night (maybe 2?) of sleep you should be good to go! Since t
 Hope this gave you some intuition on how to proceed with more complex solvates. Let me know if you had any doubts or any contributions. 
 
 Good Luck! :D
+
 
 
 
