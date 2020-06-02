@@ -11,7 +11,7 @@ Or, if you want to be brave, here are the links I found most usefull:
 
 * [Packmol, a very usefull tool for building solvents](http://m3g.iqm.unicamp.br/packmol/home.shtml)
 * [AMBER Tutorial 15, for building molecules from zero](https://ambermd.org/tutorials/advanced/tutorial15/Tutorial2.xhtml)
-* [A guide to understan PDB data](http://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/introduction)
+* [A guide to understand PDB data](http://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/introduction)
 * [This dudes own wiki](http://chinthaka.wikidot.com/solventbox)
 
 If you found a better way to solve any of the steps below (for example, building the solvent first, then putting the DNA in, which is a more secure way of simulating) please contact me. I would be more than glad to add it to the repository. Now let's get started
